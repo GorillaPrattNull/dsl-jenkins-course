@@ -15,7 +15,6 @@ emailext body: 'Test Message',
   try {
     stage('build') {
       println('so far so good...')
-      CulpritsRecipientProvider
 to
     }
     stage('test') {
