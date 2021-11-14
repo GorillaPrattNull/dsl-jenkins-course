@@ -16,7 +16,7 @@ emailext body: 'Test Message',
     stage('build') {
       println('so far so good...')
 echo "${to}"
-echo "${CulpritsRecipientProvider}"
+echo "${DEFAULT_REPPLYTO}"
 echo "${DevelopersRecipientProvider}"
 echo "${RequesterRecipientProvider}"
     }
