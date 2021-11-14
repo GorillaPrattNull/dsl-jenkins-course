@@ -15,7 +15,7 @@ emailext body: 'Test Message',
   try {
     stage('build') {
       println('so far so good...')
-to
+echo "${to}"
     }
     stage('test') {
       println('A test has failed!')
