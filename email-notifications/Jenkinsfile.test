@@ -16,6 +16,9 @@ emailext body: 'Test Message',
     stage('build') {
       println('so far so good...')
 echo "${to}"
+echo "${CulpritsRecipientProvider}"
+echo "${DevelopersRecipientProvider}"
+echo "${RequesterRecipientProvider}"
     }
     stage('test') {
       println('A test has failed!')
