@@ -16,6 +16,7 @@ emailext body: 'Test Message',
     stage('build') {
       println('so far so good...')
       CulpritsRecipientProvider
+to
     }
     stage('test') {
       println('A test has failed!')
