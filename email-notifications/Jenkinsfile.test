@@ -17,8 +17,6 @@ emailext body: 'Test Message',
       println('so far so good...')
 echo "${to}"
 echo "${DEFAULT_REPLYTO}"
-echo "${DevelopersRecipientProvider}"
-echo "${RequesterRecipientProvider}"
     }
     stage('test') {
       println('A test has failed!')
@@ -34,9 +32,7 @@ echo "${RequesterRecipientProvider}"
     // send email
     if(to != null && !to.isEmpty()) {
       emailext(body: content, mimeType: 'text/html',
-         replyTo: '$DEFAULT_REPLYTO', subject: subject,
-	to: alikyi@gmail.com, attachLog: true )         
-//to: to, attachLog: true )
+         replyTo: '$DEFAULT_REPLYTO', subject: subject, to: 'alikyi@gmail.com', attachLog: true )
     }
 
     // mark current build as a failure and throw the error
