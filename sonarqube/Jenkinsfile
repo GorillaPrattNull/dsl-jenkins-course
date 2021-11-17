@@ -3,7 +3,7 @@ node {
     myGradleContainer.pull()
 
     stage('prep') {
-        git url: 'https://github.com/GorillaPrattNull/gs-gradle.git'
+        git url: 'https://github.com/GorillaPrattNull/my-gs-gradle.git'
     }
 
     stage('build') {
